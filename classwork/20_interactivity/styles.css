@@ -1,0 +1,98 @@
+body {
+    background-color: pink;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+}
+
+/* Grouping selectors using comma (h1, h2, h3) */
+h1, h2 {
+    font-family: 'Trebuchet MS', fantasy;
+    padding: 10px 0 10px 20px;
+    margin-bottom: 0;
+}
+
+h1 {
+    background-color: indianred;
+    color: white;
+}
+
+h2 {
+    background-color: darkred;
+    color: white;
+}
+
+dialog {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+dialog::backdrop {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+header {
+    /* Fixes it! Like what the fudge? */
+    overflow: hidden;
+    background-image: url('images/new-york-city.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+}
+
+header .profile-pic {
+    /* We take our picture *out of the flow* of the page, and shove it to the right
+    ** This breaks our layout! 
+    */
+    float: right;
+    border-radius: 50%;
+    width: 300px;
+    margin-top: 120px;
+
+    /* Look ma! Sorcery! (nah, it's just CSS ;) ) */    
+    filter: grayscale(1);
+    transition: filter 2s;
+}
+
+/* Look ma! Pseudo classes! */
+header .profile-pic:hover {
+    filter: grayscale(0);
+}
+
+/* Class selectors */
+.subtitle {
+    color: darkslategray;
+    font-style: italic;
+    font-weight: bold;
+    padding-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* Child combinator */
+p > strong {
+    color: darkmagenta;
+}
+
+/* ID selector */
+#about p > em {
+    color: slateblue;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Descendant selector */
+footer a {
+    font-weight: bold;
+    color: darkred;
+    text-decoration: none;
+}
