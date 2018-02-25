@@ -1,0 +1,48 @@
+body {
+    background-color: pink;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+}
+
+/* Grouping selectors using comma (h1, h2, h3) */
+h1, h2 {
+    font-family: 'Trebuchet MS', fantasy;
+}
+
+h1 {
+    background-color: indianred;
+    color: white;
+}
+
+h2 {
+    background-color: darkred;
+    color: white;
+}
+
+/* Class selectors */
+.subtitle {
+    color: darkslategray;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Child combinator */
+p > strong {
+    color: darkmagenta;
+}
+
+/* ID selector */
+#about p > em {
+    color: slateblue;
+}
+
+footer {
+    text-align: center;
+}
+
+/* Descendant selector */
+footer a {
+    font-weight: bold;
+    color: darkred;
+    text-decoration: none;
+}

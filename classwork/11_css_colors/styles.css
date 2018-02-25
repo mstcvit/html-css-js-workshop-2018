@@ -1,0 +1,21 @@
+/* Place your CSS selectors in the order of the flow of your HTML document.
+ * This makes it easy to find the styles and make changes.
+ */
+
+body {
+  background-color: khaki;
+  /* background-color: springgreen;     */
+  /* background-color: pink; */
+  /* background-color: #f3e433;
+    background-color: rgb(234, 180, 34); */
+}
+
+h1 {
+  background-color: indianred;
+  color: white;
+}
+
+h2 {
+  background-color: darkred;
+  color: white;
+}
