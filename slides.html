@@ -21,7 +21,7 @@
 <body class="en" data-duration="360">
   <main>
     <section class="slide welcome highlight">
-      <h1><img class="logo-stacked" src="framework/img/llc-logo-stacked-white.png" alt="Ladies Learning Code logo">Welcome!</h1>
+      <h1>Welcome!</h1>
       
       <div class="instructions">
         <!-- ADD WIFI INFO HERE -->
@@ -32,10 +32,15 @@
         
         <h2>Download<br> & Install</h2>
         <ol class="downloads">
-          <li>Learner files (zip file): <a href="https://github.com/ladieslearningcode/llc-html-css-one-page/archive/master.zip">http://bit.ly/llc-onepage</a>
+          <li>Learner files (zip file): <a href="https://github.com/mstcvit/html-css-workshop">github.com/mstcvit/html-css-workshop</a>
             <ul>
-              <li>unzip the learner file (<em>extract all</em> if you’re on a PC)</li>
-              <li>open <em>slides.html</em> in the browser to view the slides</li>
+              <li>Navigate to GitHub URL</li>
+              <li>If you have git, run
+                  <br>
+                  <code>git clone https://github.com/mstcvit.com/html-css-workshop</code>
+                  <br>
+                  on your terminal</li>
+              <li>Or, click the Download button</li>
             </ul>
           </li>
           <li>Visual Studio Code: <a href="http://atom.io">http://code.visualstudio.com</a></li>
@@ -51,7 +56,6 @@
     </section> 
     
     <section class="slide intro">
-      <img class="logo" src="framework/img/llc-logo-white.png" alt="Ladies Learning Code logo">
       <h1 class="heading-bg">
         <span>HTML, CSS & JavaScript:<br>Whirlwind Introduction</span>
       </h1>
@@ -78,16 +82,6 @@
       </footer>
     </section>
     
-    <section class="slide centered" data-markdown>
-      <script type="text/template">
-        # Today&rsquo;s project
-
-        See the whole project [here](project/reference/final.html).
-
-        ![final project](framework/img/workshop/final-project.jpg)
-      </script>
-    </section>
-    
     <section class="slide" data-markdown>
       <script type="text/template">
         # Course Outline
@@ -100,6 +94,23 @@
       <script type="text/template">
         #Getting Started
         ##The Web Browser & Writing HTML
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #What can you build with Web?
+
+        Turns out almost everything.
+
+        1. Take your phone, go to [m.flipkart.com](https://m.flipkart.com). That's a Progressive Web App which works and feels just like a native app. It works everywhere the web is accessible.
+        1. Ola recently built Ola Lite which is basically a wrapper around a web app. It just weighs **520KB** compared to **30MB** Android app. It just works.
+        1. Did you know that most of Facebook and Instagram apps' UI on Android and iOS are build with React Native — a web-based technology?
+        1. Did you know that most of the data visualization which are output by Python and R uses web technology to render them and make them interactive?
+        1. Did you know that you can get a complete IDE running on a browser? Check out [c9](https://c9.io/login) and [Codeanywhere](https://codeanywhere.com/)
+        1. Did you know it's possible to compile other languages and make them work inside web browsers? Check out WebAssembly and this cool Unity game port running on a browser.
+           
+            Such Web, Much Wow...
       </script>
     </section>
 
@@ -161,6 +172,21 @@
         
         ![](framework/img/workshop/llc-no-css.jpg)
         ![](framework/img/workshop/llc-css.jpg)
+      </script>
+    </section>
+
+    <section class="slide side-by-side" data-markdown>
+      <script type="text/template">
+        #HTML, CSS & JS — Relationship
+        
+        ##HTML
+        Provides structure to the web-page. Think of it as the **Skeleton** in the human body. Skeleton gives structure and rigidity to our body.
+        
+        ##CSS
+        Adds style to the web page. Think of it like the **Skin** that wraps our skeleton. Without all the skin and extra features, we'd look pretty boring (and scary ofc).
+
+        ##JavaScript
+        Adds interactivity to our web page. What fun is a still human body? JavaScript is like the **Nervous System** in our human body which allows us to control and perform actions.
       </script>
     </section>
 
@@ -1939,12 +1965,6 @@ border: 15px solid green;</textarea>
         For your reference, check out [exercise-10.html](project/reference/exercise-10.html).
       </script>
     </section>
-
-    <section class="slide final-exercise" data-markdown>
-      <script type="text/template">
-        # Final exercise!
-      </script>
-    </section>
     
     <section class="slide" data-markdown data-toc>
       <script type="text/template">
@@ -2087,23 +2107,150 @@ border: 15px solid green;</textarea>
         The closer to 1 the alpha transparency value is, the more solid the colour will appear.
       </script>
     </section>
-    
+
     <section class="slide title" data-markdown data-toc>
       <script type="text/template">
-        #Next steps
-      </script>
+              #Intro to JavaScript
+            </script>
     </section>
-    
+
     <section class="slide" data-markdown>
       <script type="text/template">
-        # Next steps
-        
-        Here are a couple of ideas for furthering your project.
-        
-        1. use icon fonts instead of images for the social icons
-          * Try [Font Awesome](http://fortawesome.github.io/Font-Awesome/) icon fonts
-        1. add metadata - [info here](https://support.google.com/webmasters/answer/79812?hl=en) 
-        1. [Add a favicon](http://blog.teamtreehouse.com/how-to-make-a-favicon)
+        # JavaScript Quick Intro
+
+        1. Brendan Eich worked for Netscape (*now Mozilla*) and Netscape wanted a scripting language to make their Netscape Navigator browser (now Firefox) better than Internet Explorer.
+        1. They wanted it fast. They wanted it to look like Java.
+        1. Brendan mixed the stuff he loved most about languages like *Scheme*, *Lisp*, *Smalltalk* and made it into something that looked like Java.
+        1. And thus, JavaScript was born.
+        1. P.S. He made it in **1 WEEK**!
+        1. JavaScript != Java
+        1. JavaScript != Java inside Browser
+        1. JavaScript is awesome.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Variables
+
+        Variables hold data. You create them using `var`.
+
+        ```
+        var numberOfItems = 10;
+        var myAge = 18;
+        ```
+
+        JavaScript is *loosely typed*. This means you don't have to specify the data type when creating variables.
+
+        Let's look at some of the types JavaScript supports:
+
+        ```
+        var num = 10; // Number
+        var string = 'hello world!'; // String
+        var boolean = true; // String
+        var nothing = undefined; // undefined (didn't assign a value)
+        var nothing2 = null; // null (explicitly saying contains nothing)
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Quick Bytes
+
+        1. Statements end with a semi-colon (`;`)
+        1. No need for a `main()` function. Executes from top to bottom.
+        1. Comments created using `\\` for single-line and `/* */` for multiline comments.
+        1. Functions are first-class citizens.
+        1. Functions are also objects.
+        1. Objects can be created without using `class`.
+        1. JavaScript is an object-oriented language. Java is a classical language, i.e, it uses classes to structure programs.
+        1. JavaScript has bad parts. **But it has a lot of good stuff**.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Functions
+
+        You create functions using the `function` keyword.
+
+        ```
+        function add(a, b) {
+          return a + b;
+        }
+
+        var sum = add(20, 30);
+        console.log(sum);
+        ```
+
+        Note that you **don't specify the return type** when creating functions.
+
+        Functions that don't explicitly return anything implicitly returns `undefined`.
+
+        ```
+        function foo() {
+          console.log("hello");
+        }
+
+        var result = foo();
+        console.log(result); // undefined
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # JavaScript on the Browser
+
+        JavaScript on the browser allows you to access and manipulate elements on the page.
+
+        When the browser parses your HTML file, it creates two things:
+
+        1. Document Object Model or **DOM**
+        2. CSS Object Model or **CSSOM**
+
+        These are data structures that represent the HTML markup and the CSS styles applied to your document. Using JavaScript, you can access the DOM and the CSSOM and do a lot of cool stuff.
+
+        Let's see what we can do.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Manipulating Elements
+
+        ## Get reference to an element
+        ```
+        // #myButton is the CSS selector that selects the button
+        var button = document.querySelector('#myButton');
+        ```
+
+        ## Change the text content
+        ```
+        button.textContent = 'John Cena';
+        ```
+
+        ## Change a CSS property
+        ```
+        button.style.color = 'red';
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # DOM Events
+
+        Certain actions trigger what are known as `events` in the DOM. For example, when you click something on a page, a `click` event is generated. Or if you hover over an image, a `mouseover` event is generated.
+
+        We can use JavaScript to listen to such events and execute a function if an event occurs.
+
+        ```
+        myButton.addEventListener('click', function() {
+          // do something
+        });
+        ```
       </script>
     </section>
     
@@ -2111,37 +2258,39 @@ border: 15px solid green;</textarea>
       <script type="text/template">
         #Resources
         
-        1. Online tutorials:
-          * http://learn.shayhowe.com/html-css/
-          * https://www.codeschool.com/courses/front-end-foundations
-        1. http://www.htmlandcssbook.com
-        1. Try a few more Ladies Learning Code workshops. Check our roadmap for suggestions at [http://ladieslearningcode.com/roadmap](http://ladieslearningcode.com/roadmap)
+        1. Finish the HTML, CSS and JavaScript tracks in [Codecademy](https://codecademy.com)
+        1. Refer [Mozilla Developer Networks](https://mdn.mozilla.org) for learning much, much more!
+        1. [javascript.info](https://javascript.info) for a thorough learning of modern JavaScript concepts and methodologies.
+        1. Try and finish the [freeCodeCamp](https://www.freecodecamp.org/) course plan and get a certificate.
+        1. Create a [CodePen](https://codepen.io) account and explore amazing projects, learn how they are built and make your own stuff. It's the best place to get motivated.
+        1. Learn jQuery, Bootstrap.
+        1. Learn React or Vue.js (Advanced stuff but fret not, if you got your basics right, you can do this!)
+        1. Make awesome projects!
+      </script>
+    </section>
+
+    <section class="slide small-type" data-markdown>
+      <script type="text/template">
+        #Getting your site online
+  
+        1. Get your free [Microsoft Imagine](https://imagine.microsoft.com/en-us) account activated and get free access to Microsoft Azure Web Apps.
+        1. You can host your website on GitHub for free. You need to know Git first.
+        1. Lots of free web hosting goodies and more via [GitHub Student Developer Pack](https://education.github.com/pack)
+      </script>
+    </section>
+
+    <section class="slide title" data-markdown data-toc>
+      <script type="text/template">
+        #Web is Complex*
+        ##*But that's what makes it awesome
+        <br>
+        ##Keep exploring and learning.
       </script>
     </section>
     
-    <section class="slide small-type" data-markdown>
-      <script type="text/template">
-      #Getting your site online
-
-      You will need to register a domain name and purchase hosting. Here are some suggestions:
-      
-      * [dreamhost.com](http://www.dreamhost.com/r.cgi?2085384) - domains and hosting - use promo code **LLC40** to get $40 off your registration!
-      * [hover.com](http://hover.com/ladiescode) - domains - save 10% with the promo code "learningcode"
-
-      Why keep your domains and hosting separate?<!-- .element: class="note" --> [Learn more about Hover](http://ladieslearningcode.com/getting-hosted-domains-with-hover/).
-
-      You will also need to upload your files to your hosting server. You will need some info usually provided by your hosting service provider: FTP Address, Username, Password.
-
-      Here's a tutorial getting your files online using FileZilla: [FileZilla Client Tutorial](https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_%28en%29)  
-      </script>
-    </section>
-
     <!-- Last slide -->
     <section class="slide last">
       <h1>Thank you!</h1>
-      <h2 class="heading-bg">
-        <span>Intro to HTML & CSS:<br>Building a one-page website</span>
-      </h2>  
 
       <!-- <img class="instructor" src="http://cl.ly/image/0r3Q3H110G36/profile-generic.jpg" alt="instructor name">
       <h2><span class="cursive">with</span> Instructor Name</h2>
