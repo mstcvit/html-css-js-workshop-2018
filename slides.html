@@ -296,23 +296,23 @@
       <script type="text/template">
       #Setting up your project
 
-      Inside of the folder you downloaded today, open the **project** folder in your text editor to edit your project.
+      Inside of the folder you downloaded today, open the **classwork** folder in your text editor to edit your project.
 
       ```html
       llc-html-css-one-page-master
         |-- framework // Contains files needed for slide presentation. Do not edit!
-        |-- project // Contains the exercise files for this workshop. (images, CSS & HTML files)
+        |-- classwork // Contains the exercise files for this workshop. (images, CSS & HTML files)
         |-- slides.html // This is the file you are viewing right now!
       ```
 
-      Go to **File** > ** Add Project Folder**. A popup will appear.
+      Go to **File** > ** Open Folder**. A popup will appear.
       
       ![](framework/img/workshop/editor-add-project-1.jpg)
       
       Then:
       
-      * navigate to the **llc-html-css-one-page-master** folder
-      * select **project**
+      * create a new folder and give it a name `mywebsite`
+      * select **mywebsite**
       * click **Open**
       
       The files will now appear in the sidebar.
@@ -326,14 +326,13 @@
         Your project folder structure will look like this:
         
         ```html
-        project
-          |-- images 
-          |-- reference
+        classwork
+          |-- 01_html_structure
+          |-- 02_adding_content
+          |-- ...
         ```
         
-        The **images** folder contains a selection of images to use in your project (or add your own to this folder during the exercises).
-        
-        The **reference** folder contains the solutions for each exercise. Try not to peek unless you're *really* stuck.
+        These are the solutions for the individual tasks you will be doing today. If you're stuck, you can copy the contents of the respective folder to your project folder.
       </script>
     </section>
     
@@ -351,29 +350,6 @@
         *   [VS Code Shortcuts Keyboard Shortcuts for macOS](https://go.microsoft.com/fwlink/?linkid=832143)
         *   [VS Code Shortcuts Keyboard Shortcuts for Linux](https://go.microsoft.com/fwlink/?linkid=832144)
 
-      </script>
-    </section>
-    
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Class Exercise #1: Create your project's HTML page
-        
-        1. In the text editor, create a new file (**File** > **New File**)
-        1. Save it as `index.html` (**File** > **Save**)
-        1. Add all of the basic HTML tags. Refer to [this slide](slides.html#basic-tags) for reference.
-        1. In *between* the `<title></title>` tags, add a *page title* that reflects the content of your webpage. Example:
-          ```
-          <title>Laura Ipsum | Digital Designer & Developer</title>
-          ```
-        1. Open `index.html` in the browser. 
-          * go to Windows Explorer or Finder
-          * navigate to the **llc-html-css-one-page-master > project** folder
-          * double click on **index.html** to open it in your default browser
-          <br><span class="note">(If Chrome is not your default, right-click/two-finger tap on **index.html** and choose **Open With > Chrome**)</span>
-          
-        There is no page *content* yet so the browser will show a blank page. The page *title* however, will show in the browser toolbar.
-        
-        ![exercise 1 example](framework/img/workshop/exercise-1.jpg)
       </script>
     </section>
     
@@ -577,27 +553,6 @@
       </script>
     </section>
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Class Exercise #2: Page structure
-
-        Back in the text editor, let's add the HTML5 structural tags to setup the page layout. 
-        Only add the structural HTML blocks in this step, no content just yet.
-        
-        We will need these tags: `<header>`, two `<section>`'s and a `<footer>`
-
-        Also, you can use HTML comments to help organize the code like so:
-
-        ```
-        <!-- page header -->
-        <header>
-
-        </header>
-        ```
-        View <!-- .element: class="note" --> `exercise-2.html` in your **reference** folder or the previous slide to check your code.
-      </script>
-    </section>
-
     <section class="slide title" data-markdown data-toc>
       #Adding content
       ##Headings, paragraphs, images and links
@@ -644,75 +599,6 @@
         </div>
 
         Let's look at how we could describe this hierarchy using heading tags.
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Exercise #3: Add Content (15mins)
-
-        Add some text based content. Images & links will also be covered next.
-        
-        See <!-- .element: class="note" -->`exercise-3.html` for reference or view the next slide but only if you're stuck!  
-        Add the content below to make your page content look similar to [this](framework/img/workshop/exercise-3.png).
-
-        1. Add your name & tagline in the `<header>` section using the appropriate heading tags. 
-          <span class="note">(**Reminder!** `<head>` and `<header>` are two different tags.)</span>
-        1. In the **About** section, add a heading and 2 paragraphs.
-          <span class="note">Don&#39;t have content to add? Use placeholder text! See resources below.</span>
-        1. In the **Loves** section, add a heading and a paragraph.
-        1. In the **Footer**, add a heading.
-        
-        ---
-        ###Resources        
-        * http://meettheipsums.com
-        * http://thewireipsum.com 
-        * http://www.quotes.net
-      </script>
-    </section>
-    
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Review your code
-        
-        (Also found in <!-- .element: class="note" -->`exercise-3.html`)
-        
-        ```
-        <!DOCTYPE html>
-        <html lang="en">
-          <head>
-            <meta charset="UTF-8">
-            <title>Laura Ipsum | Designer & Developer</title>
-          </head>
-          <body>
-            <!-- page header -->
-            <header>
-              <h1>Hi! I'm Laura Ipsum.</h1>
-              <h2>I'm a digital designer and developer with a penchant for gourmet doughnuts.</h2>
-            </header>
-
-            <!-- about me section -->
-            <section class="about">
-              <h1>About Me</h1>
-
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </section>
-
-            <!-- My favorite things section -->
-            <section class="loves">
-              <h1>Love, Love, Love</h1>
-              <p>Here are a few things that I really love.</p>
-            </section>
-
-            <!-- footer & contact info -->
-            <footer>
-              <h1>Contact Me</h1>
-            </footer>
-          </body>
-        </html>
-        ```
       </script>
     </section>
     
@@ -808,28 +694,6 @@
         ```xml
         <a href="mailto:hello@myemail.com">hello@myemail.com</a>
         ```
-      </script>
-    </section>
-  
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Exercise #4: Add links and images (15mins)
-
-        1. Add a profile image.
-        1. Add three or four images to your "Loves" section.
-        1. Add an email link in the footer.
-        1. Add the social links to the Footer/Contact section.  
-          * use the sample images in the **project > images ** folder
-          * use your own images
-          * make the images into links
-          * use text links if you don't want to use an image
-
-        Your page should look something like this: <!-- .element: class="note" -->[exercise-4.html](project/reference/exercise-4.html)
-        
-        <!-- .element: class="note" -->**Bonus exercise**  
-        Square images are better for the Part 2 exercises. You can crop and resize them using this free tool, [Pixlr](http://apps.pixlr.com/editor/). Between 200px - 400px is best.
-        
-        That's it! That's all the HTML you'll need for today's project!
       </script>
     </section>
     
@@ -938,28 +802,6 @@ selector { /* select the link */
         ---
         ###Resource
         There are several ways to add CSS. Read more about the difference ways to reference CSS <!-- .element: class="footnote" -->[here](http://reference.sitepoint.com/css/linkingcss).
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Class Exercise: Create your project's CSS File
-
-        1. In the text editor, create a new CSS file by selecting **File > New File**.  
-        1. Name it **styles.css** and save it to the **css** folder (already included in your **project** folder).  
-        <span class="note">You can name the file anything but it's best to choose a name that describes the file content.<br> (i.e. styles.css, global.css, custom.css, project-name.css, etc)</span>
-        1. Then, reference it in **index.html**. <span class="note">**Pro tip!** Type `link` and press tab!</span>
-          ```
-          <head>
-              <link rel="stylesheet" href="css/styles.css">
-          </head>
-          ```
-        1. Run a test by adding a background color to the viewport (`body`).
-          ```
-          body {
-            background: lightblue;
-          }
-          ```
       </script>
     </section>
     
@@ -1130,63 +972,10 @@ text-transform: lowercase;</textarea>
         ```
       </script>
     </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Class Exercise #5: Typography
-
-        (Make sure the Google Font stylesheet has been added to your HTML page to use the fonts.)<!-- .element: class="note" -->
-
-        Let&#39;s add the base font to the `body` element, so all the descendant elements can inherit this style.
-        
-        Change the `font-weight` to a thinner or thicker font (optional).
-
-        ```
-        body {
-          font-family: 'Open Sans', sans-serif;
-          font-weight: 300;
-        }
-        ```
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Class Exercise #5: Typography (continued)
-        
-        Let&#39;s set a different font for only the headings. 
-        
-        To target multiple selectors at the same time, you can *combine* selectors with a comma.
-
-        ```
-        h1, 
-        h2 {
-          font-family: 'Bad Script', cursive;
-        }
-        ```
-        Your page should now look like [exercise 5](project/reference/exercise-5.html) in the reference folder.
-      </script>
-    </section>
     
     <section class="slide small-type" data-markdown>
       <script type="text/template">
-        #Break time!
-
-        Optional exercises:
-        
-        * Compare your code to [exercise-5.html](project/reference/exercise-5.html) in the reference folder.
-        * Pick two new fonts if you don't want to use the LLC selected fonts.
-        * Pick a color palette - the LLC project uses colours from [this palette](http://coolors.co/app/fdecef-cecccc-9d6381-612940-0f110c).   
-        See below for more colour resources.
-        * Pick a background image from the **project > images** folder or use one of the resources from [here](https://medium.com/@dustin/stock-photos-that-dont-suck-62ae4bcbe01b).
-        * If using your own images, here are some suggested image sizes:
-          * profile image or the Loves section - 400px width x 400px height
-          * background images - 1000-1400px width
-          
-        Try [Pixlr](https://pixlr.com/web), a free image editing app to crop images.
-        
-        ---
-        ###Resources
+        # Resources
         
         * http://coolors.co  
         * http://colours.neilorangepeel.com  
@@ -1290,75 +1079,6 @@ text-transform: lowercase;</textarea>
 }</code></pre>
         </script>
       </section>
-
-      <section class="slide" data-markdown>
-        <script type="text/template">
-        #Class Exercise #6 - Background Colours
-        
-        Let's update our project.  
-        
-        Add comments to block off and organize the CSS file.  Use the sample below as reference.
-
-        ```
-        /* PAGE HEADER
-        -----------------------------------------*/
-        header {
-          background: #CECCCC; /* or use your own colour palette */
-        }
-
-        ```  
-        Color reference: <!-- .element: class="note" --><span style="background:#CECCCC;padding:0 5px;">#CECCCC</span>
-      </script>
-    </section>
-    
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Class Exercise #6 - Background colours
-        
-        Next, apply a background colour to just the "Loves" section.  
-        <span class="note">(The "About" section is getting a different treatment in a later exercise.)</span>
-        
-        ```
-        /* LOVES - things I love 
-        -----------------------------------------*/
-        .loves {
-          background: #9D6381;
-        }
-        ```
-        Color reference: <!-- .element: class="note" --><span style="background:#9D6381;padding:0 5px;">#9D6381</span>
-        
-        Since there's only one `<footer>`, we can use that as our selector. Also, change the color of the text, if using a dark background colour.
-        
-        ```
-        /* FOOTER - contact info
-        -----------------------------------------*/
-        footer {
-          background: #0F110C;
-          color: #CECCCC;
-        }
-        ```
-        Color reference: <!-- .element: class="note" --><span style="background:#0F110C;padding:0 5px;color:#CECCCC;">background: #0F110C; color: #CECCCC;</span>
-      </script>
-    </section>
-    
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Class Exercise #6 - Background colours
-        
-        Notice the colour of the link didn't change from default blue? 
-        
-        To change the color of the link, select the anchor tag and override the default blue.
-        
-        ```
-        a {
-          color: #9D6381; 
-        }
-        ```
-        Color reference: <!-- .element: class="note" --><span style="background:#9D6381;padding:0 5px;">#9D6381</span>
-        
-        Not exactly super polished yet but it's getting there.  Your page should look similar to [exercise-6.html](project/reference/exercise-6.html) in your **reference** folder.
-      </script>
-    </section>
     
     <section class="slide title" data-markdown data-toc>
       <script type="text/template">
@@ -1530,92 +1250,6 @@ border: 15px solid green;</textarea>
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Class Exercise #7 - Spacing
-        
-        (Make sure the box model fix from the previous slide has been added to<!-- .element: class="note" --> **styles.css** before proceeding. Also, use the amount of space that looks good to you & use the examples below as a guide.)
-        
-        Add padding to all the portions of the page so the content is not squished to the edge and has consistent styling. 
-        
-        Combine the selectors to target them all at the same time.
-        
-        ```
-        header, 
-        section, 
-        footer {
-          padding: 100px 150px;
-        }
-        ```
-      </script>
-    </section>
-    
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Class Exercise #7 - Spacing 
-        
-        Notice the white space around the edge of the page? That's default space in the `body` element. Reset it by setting the values to 0.
-
-        ```
-        body {
-          margin: 0;
-          padding: 0;
-        }
-        ```
-        
-        Use `margin` to adjust the default space around the  `<h1>` and `<h2>` tag.  (You can *inspect the element* using the dev tools to see the default margin.)
-        
-        ```
-        h1, h2 {
-          margin: 0; /* removes default space */
-        }
-        ```
-      </script>
-    </section>
-  
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Class Exercise #7 - Spacing
-        
-        The final project also has the content in the "Loves" and footer section centered.  How can we target all the content in both of those sections at the same time?
-        
-        <pre class="delayed"><code>.loves, 
-        footer {
-          text-align: center;
-        }
-        </code></pre>
-        
-        Your page should now look similar to <!-- .element: class="delayed" --> [exercise-7.html](project/reference/exercise-7.html).
-      </script>
-    </section>
-    
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Class Exercise #8 - Typography
-      
-        If you want to remove the default bold style of the headings, you can add the `font-weight` property.
-        
-        ```
-        h1, h2 {
-          font-weight: normal; /* removes default bold style */
-        }
-        ```
-        
-        Let's also customize some font styles using `font-size` and `line-height`.  
-        
-        ```
-        h1 {
-          font-size: 75px;  
-        }
-        p {
-          font-size: 18px;
-          line-height: 1.5; /* adjusts space between the lines */
-        }
-        ```
-        Your page should now look similar to [exercise-8.html](project/reference/exercise-8.html).
-      </script>
-    </section>
-    
-    <section class="slide" data-markdown>
-      <script type="text/template">
         #Descendant selectors
 
         Matches any element that is a descendant (nested tag) of another element. 
@@ -1652,57 +1286,6 @@ border: 15px solid green;</textarea>
         For example, `nav ul li a` would override `nav a` because it&#39;s more specific. 
         
         It&#39;s generally better to start with generic selectors and make them more specific, as needed.
-      </script>
-    </section>
-    
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Class Exercise #9: Style the header
-        
-        Let's add some specific styles to the header, to set it apart from the rest of the page.  We can't use `h1` or `h2` by itself since it will select all of them on the page so use *descendant selectors* instead.
-        
-        ```xml
-        <header>
-          <h1>Hi! I'm Laura Ipsum.</h1>
-          <h2>I'm a digital designer and developer with a penchant for gourmet doughnuts.</h2>
-        </header>
-        ```
-
-        ```
-        header h1 {
-          font-size: 100px;
-        }
-        header h2 {
-          font-size: 32px;
-        }
-        ```
-      </script>
-    </section>
-    
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Class Exercise #9: Style the header
-        
-        Next, let's highlight some keywords in the header (e.g. name). 
-        
-        The semantic HTML meaning of the `<strong>` tag is to give importance to the text, so be sure to use it only for important text.
-          
-        ```
-        <h1>Hi! I'm <strong>Laura Ipsum</strong>.</h1>
-        <h2>I'm a digital <strong>designer</strong> and <strong>developer</strong> with a penchant for gourmet doughnuts.</h2>
-        ```
-        Now it can also be used to add CSS. If you want this style to be available anytime the `<strong>` tag is used, then there's no need to use a descendant selector.
-        
-        <!-- .element: class="note" -->**Pro tip!** Make sure the strong tag is used **semantically**, not just as a hook for styling!
-        
-        ```
-        strong {
-          color: #9D6381;
-        }
-        ```
-        Color reference: <!-- .element: class="note" --><span style="background:#9D6381;padding:0 5px;">#9D6381</span>
-        
-        Your page should now look similar to [exercise-9.html](project/reference/exercise-9.html).
       </script>
     </section>
     
@@ -1822,30 +1405,6 @@ border: 15px solid green;</textarea>
       </div>
     </section>
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Class Exercise: Float
-        
-        Add a class to the profile image so to apply the float only to this image.
-        
-        ```html
-        <img class="profile-img" src="images/profile.jpg" alt="Laura Ipsum">
-        ```
-
-        Then float the image (right or left).  Also, add space between the image and text using `margin`.
-
-        ```css
-        /* ABOUT
-        -----------------------------------------*/
-        .profile-img {
-          float: right;
-          margin-left: 20px;
-        }
-        ```
-        Floating elements may have unexpected results.  See examples on the next slide.
-      </script>
-    </section>
-
     <section class="slide side-by-side" data-markdown>
       <script type="text/template">
         #Floats & breaking the stacking flow
@@ -1860,28 +1419,6 @@ border: 15px solid green;</textarea>
     </section>
     
     <section class="slide centered css-gif" data-markdown>
-    </section>
-    
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Class Exercise: Reset the float
-        
-        To restore the regular stacking flow *after* the floated element, it needs to be *reset*. There's a couple ways to do it. Today, let's use `overflow`. 
-        
-        Adding `overflow: hidden;` to the *parent* of the floated element forces it to 'contain' any floated child elements.
-        
-        ```
-        <section class="about">
-          <img class="profile-img" src="images/profile.jpg" alt="Laura Ipsum">
-          ...
-        </section>
-        ```
-        ```
-        .about {
-          overflow: hidden;
-        }
-        ```
-      </script>
     </section>
 
     <section class="slide side-by-side" data-markdown>
@@ -1939,21 +1476,7 @@ border: 15px solid green;</textarea>
         <a id="hover">I'm a link!</a>
       </script>
     </section>
-    
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Exercise #10: Style the images (20mins)
-        
-        Take some time to style your About and Loves images. 
-        
-        You can also use `width` or `height` on the images to make them all the same size and `margin`, `padding`, `border` to space and style the images.
-        
-        If you have some text links on your page, add a hover effect.
-      
-        For your reference, check out [exercise-10.html](project/reference/exercise-10.html).
-      </script>
-    </section>
-    
+
     <section class="slide" data-markdown data-toc>
       <script type="text/template">
         #Background images
@@ -2036,34 +1559,6 @@ border: 15px solid green;</textarea>
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        # Class Exercise #11: background
-        
-        Let&#39;s add the below sample code to our project, one value at a time, to see how each property works.
-
-        ```
-        body { /* longhand */
-          background-image: url('../images/buildings.jpg');
-          background-repeat: no-repeat;
-          background-attachment: fixed;
-          background-size: cover;
-        }
-        ```
-        ```
-        body { /* shorthand */
-          background: url(../images/buildings.jpg) no-repeat fixed;
-          background-size: cover;
-        }
-        ```
-        
-        ---
-        ###Pro tip!
-        
-        Note that `background-size` is the longhand property. To include it in the shorthand style, it **must** be included after `background-position`, separated with the `/` character. In this case, it may be less error prone to just add it via the longhand property. More about background [here](https://css-tricks.com/almanac/properties/b/background/) and [here](http://www.carsonshold.com/2013/02/css-background-sizecover-doesnt-like-fixed-positioning/).
-      </script>
-    </section>
-    
-    <section class="slide" data-markdown>
-      <script type="text/template">
         # Opaque background Styles
         
         The image adds some pizzazz but now it's hard to read the text!  
@@ -2075,24 +1570,6 @@ border: 15px solid green;</textarea>
         Or a quick online search almost always ends up with a solution like this tool right here: <http://hex.colorrrs.com>!
         
         The LLC project uses <span style="background:#612940;padding:0 5px;color: white;">#612940</span> which coverts to `rgb(97,41,64)`.
-      </script>
-    </section>
-    
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Class Exercise #11: background
-        
-        Use `rgba()` as the value to create this effect. The values must be declared using this syntax:
-        
-        ```css
-        rgba(r value, g value, b value, alpha transparency percentage)
-        ```
-        ```css
-        .about {
-          background: rgba(97, 41, 64, 0.95);
-        }
-        ```
-        The closer to 1 the alpha transparency value is, the more solid the colour will appear.
       </script>
     </section>
 
